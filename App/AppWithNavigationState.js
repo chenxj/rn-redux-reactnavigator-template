@@ -27,8 +27,8 @@ export const AppRoute = TabNavigator({
       Setting : {
             screen: SettingScreen}
       },{
-      tabBarPosition  : 'bottom',
-      headerMode : 'none'
+      tabBarPosition    : 'bottom',
+      headerMode        : 'none'
 })
 
 const AppRouteWithState = connect(state => ({
@@ -45,7 +45,9 @@ const InitRoute = StackNavigator({
       },
 
 },{
-      initialRouteName : 'Login'
+      initialRouteName : 'Login',
+      headerMode : 'none'
+
 })
 
 

@@ -6,6 +6,7 @@ import {connect} from 'react-redux'
 import {View,Text,Button} from 'react-native'
 import {logIn} from '../actions/'
 import {NavigationActions} from 'react-navigation'
+import CommonStatusBar from '../components/CommonStatusBar'
 class LoginScreen extends Component {
       render(){
 	    const toMain = () => {
@@ -15,6 +16,7 @@ class LoginScreen extends Component {
 		  this.props.navigation.dispatch(act)
 	    }
 	    return (<View>
+		  <CommonStatusBar/>
 		  <Text>login screen</Text>
 		  <Button  title="login in" onPress={toMain}/>
 	    </View>)

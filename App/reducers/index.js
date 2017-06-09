@@ -26,8 +26,6 @@ const initNavState = {
 }
 */
 const nav = (state = initNavState, action) => {
-      console.log('in nav the act : ')
-      console.log(action)
       if(action.type === ActionTypes.NAV_LOGIN){
             // return AppNavigator.router.getStateForAction(NavigationActions.back(),state)
       }
